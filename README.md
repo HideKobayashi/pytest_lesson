@@ -1,7 +1,9 @@
 # pytest_lesson
 pytest を習得するためのサンプル
 
-## pytest を実行してみる
+## はじめての pytest
+
+### pytest を実行してみる
 
 次のようなファイルを作成する。
 
@@ -26,4 +28,19 @@ ch1/test_two.py
 ```python
 def test_failing():
     assert (1, 2, 3) == (3, 2, 1)
+```
+
+
+### テストを１つだけ実行する
+
+```sh
+$ cd ch1
+$ pytest -v tasks/test_four.py::test_asdict
+```
+### pytest のオプションを使用する
+
+オプションのリストを表示する。
+
+```sh
+$ pytest --help
 ```
