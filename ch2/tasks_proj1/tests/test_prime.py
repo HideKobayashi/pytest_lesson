@@ -1,4 +1,4 @@
-from tasks import is_prime, load_numbers_sorted
+from tasks import is_prime, load_numbers_sorted, fibonacci
 import pytest
 import os
 from typing import List, Tuple
@@ -67,3 +67,18 @@ def test_load_numbers_sorted(txt_and_list):
 
 # def test_load_numbers_sorted(txt):
 #     assert load_numbers_sorted(txt) == [1, 2, 3, 4, 5]
+
+# 標準出力をテストする
+def test_fibonacci(capsys):
+    fibonacci(5)
+
+    # キャプチャした標準出力と標準エラー出力を得る
+    out, _ = capsys.readouterr()
+
+    assert out == (
+        '1\n'
+        '1\n'
+        '2\n'
+        '3\n'
+        '5\n'
+    )

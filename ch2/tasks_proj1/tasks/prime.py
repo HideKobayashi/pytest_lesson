@@ -47,3 +47,18 @@ def load_numbers_sorted(txt: str) -> List[int]:
         numbers = sorted(map(lambda e: int(e), f))
 
     return numbers
+
+
+def fibonacci(n: int):
+    """与えられた数以下のフィボナッチ数列を標準出力に表示する
+
+    Args:
+        n (int): 1以上の整数
+    """
+    a = 0
+    b = 1
+
+    for _ in range(n):
+        print(b)
+
+        a, b = b, a + b
