@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/hyuki/.venvs/pytest_env/bin/python"
+    "python.pythonPath": "/Users/hyuki/.venvs/pytest_env/bin/python",
+    "restructuredtext.confPath": ""
 }
