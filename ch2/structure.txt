@@ -23,3 +23,24 @@ tasks_proj
         └── test_task.py
 
 5 directories, 17 files
+tasks_proj1
+├── CHANGELOG.txt
+├── LICENSE
+├── MANIFEST.in
+├── README.rst
+├── setup.py
+├── tasks
+│   ├── __init__.py
+│   ├── api.py
+│   ├── cli.py
+│   ├── config.py
+│   ├── tasksdb_pymongo.py
+│   └── tasksdb_tinydb.py
+└── tests
+    ├── __init__.py
+    ├── conftest.py
+    ├── context.py
+    ├── pytest.ini
+    └── test_task.py
+
+2 directories, 16 files
